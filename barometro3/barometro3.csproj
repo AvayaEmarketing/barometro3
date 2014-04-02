@@ -360,6 +360,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="git.cs" />
     <Compile Include="graph.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -368,6 +369,7 @@
       <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="excanvas\HTACCESS-SAMPLE" />
