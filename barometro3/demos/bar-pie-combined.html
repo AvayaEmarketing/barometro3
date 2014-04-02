@@ -1,0 +1,72 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <link rel="stylesheet" href="demos.css" type="text/css" media="screen" />
+    
+    <script type="text/javascript" src="../libraries/jquery.min.js" ></script>
+    <script type="text/javascript" src="../libraries/RGraph.common.core.js" ></script>
+    <script type="text/javascript" src="../libraries/RGraph.common.effects.js" ></script>
+    <script type="text/javascript" src="../libraries/RGraph.common.dynamic.js" ></script>
+    <script type="text/javascript" src="../libraries/RGraph.common.tooltips.js" ></script>
+    <script type="text/javascript" src="../libraries/RGraph.bar.js" ></script>
+    <script type="text/javascript" src="../libraries/RGraph.pie.js" ></script>
+    <!--[if lt IE 9]><script src="../excanvas/excanvas.js"></script><![endif]-->
+    
+    <title>A combined Bar and Pie chart</title>
+    <meta name="description" content="A combined Bar and Pie chart that uses gradients. " />
+    
+</head>
+<body>
+
+    <h1>A combined Bar and Pie chart</h1>
+    
+    <p>
+        This is the chart that was used on the front page (as of 13th December 2013)    
+    </p>
+
+
+    <canvas id="cvs" width="800" height="400">[No canvas support]</canvas>
+
+    <script>
+
+        window.onload = function ()
+        {
+            var bar = new RGraph.Bar('cvs', [[6236,925,7161],[6400,387,6787],[5897,1368,7265],[621,423,1044],[2426,508,2934],[2350,378,2728]])
+                .Set('gutter.top', 15)
+                .Set('gutter.left', 35)
+                .Set('gutter.right', 15)
+                .Set('background.grid.vlines', false)
+                .Set('background.grid.border', false)
+                .Set('colors', ['Gradient(white:#f11:#f11)', 'Gradient(white:#1cc:#1cc)', 'Gradient(white:#00f:#00f)'])
+                .Set('tooltips.event', 'mousemove')
+                .Set('tooltips', [
+                                  'Reseller', 'SI/SP', 'Grand Total',
+                                  'Reseller', 'SI/SP', 'Grand Total',
+                                  'Reseller', 'SI/SP', 'Grand Total',
+                                  'Reseller', 'SI/SP', 'Grand Total',
+                                  'Reseller', 'SI/SP', 'Grand Total',
+                                  'Reseller', 'SI/SP', 'Grand Total'
+                                 ])
+                .Set('labels', ['US', 'GGM', 'EU', 'CAN','CALA','APAC'])
+                .Set('highlight.stroke', 'rgba(0,0,0,0.1)')
+                .Set('strokestyle', 'rgba(0,0,0,0)')
+                .Set('shadow', true)
+                .Set('shadow.offsetx', -2)
+                .Set('shadow.offsety', -2)
+                .Set('shadow.blur', 5)
+                .Set('ymax', 10000)
+                .Set('noyaxis', true)
+                .Set('ylabels', false)
+                .Set('labels.above', true)
+                .Set('linewidth', 2)
+                .Set('hmargin', 15)
+                .Draw();
+        }
+    </script>
+
+    <p>
+        <a href="./">&laquo; Back</a>
+    </p>
+
+</body>
+</html>

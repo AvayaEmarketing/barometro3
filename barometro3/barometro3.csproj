@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B53866C-8F70-496F-8DFD-4AA84DBC1056}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>barometro3</RootNamespace>
+    <AssemblyName>barometro3</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="barometro.html" />
+    <Content Include="css\animations.css" />
+    <Content Include="css\ModalDialog.css" />
+    <Content Include="css\website.css" />
+    <Content Include="graph.aspx" />
+    <Content Include="demos\bar-3d-effect.html" />
+    <Content Include="demos\bar-ajax.html" />
+    <Content Include="demos\bar-animated-pie-chart.html" />
+    <Content Include="demos\bar-annotatable.html" />
+    <Content Include="demos\bar-axis-options.html" />
+    <Content Include="demos\bar-background-grid-dotted.html" />
+    <Content Include="demos\bar-background-hbars.html" />
+    <Content Include="demos\bar-background-image.html" />
+    <Content Include="demos\bar-bar-spline.html" />
+    <Content Include="demos\bar-basic.html" />
+    <Content Include="demos\bar-combined-line.html" />
+    <Content Include="demos\bar-combined-vprogress.html" />
+    <Content Include="demos\bar-combined2-line.html" />
+    <Content Include="demos\bar-css3-animations.html" />
+    <Content Include="demos\bar-csv-reader.html" />
+    <Content Include="demos\bar-drawing-api-objects.html" />
+    <Content Include="demos\bar-drawing-api.html" />
+    <Content Include="demos\bar-drilldown.html" />
+    <Content Include="demos\bar-front-page.html" />
+    <Content Include="demos\bar-grouped.html" />
+    <Content Include="demos\bar-grouped2.html" />
+    <Content Include="demos\bar-horizontal-gradients.html" />
+    <Content Include="demos\bar-html-key.html" />
+    <Content Include="demos\bar-html5-3d-transformations.html" />
+    <Content Include="demos\bar-in-bar.html" />
+    <Content Include="demos\bar-interactive-key.html" />
+    <Content Include="demos\bar-line-combo.html" />
+    <Content Include="demos\bar-long-labels.html" />
+    <Content Include="demos\bar-numlabels.html" />
+    <Content Include="demos\bar-onmodaldialog-event.html" />
+    <Content Include="demos\bar-pie-charts-tooltips.html" />
+    <Content Include="demos\bar-pie-combined.html" />
+    <Content Include="demos\bar-post-processing.html" />
+    <Content Include="demos\bar-seach-result-clickthru.html" />
+    <Content Include="demos\bar-sketch-wedding.html" />
+    <Content Include="demos\bar-sketch.html" />
+    <Content Include="demos\bar-stacked-above-labels.html" />
+    <Content Include="demos\bar-stacked-click.html" />
+    <Content Include="demos\bar-stacked.html" />
+    <Content Include="demos\bar-water-reflection-effect.html" />
+    <Content Include="demos\basic-ajax-csv.html" />
+    <Content Include="demos\basic-ajax-dynamic-updates.html" />
+    <Content Include="demos\basic-ajax-json.html" />
+    <Content Include="demos\basic-ajax-number.html" />
+    <Content Include="demos\basic-ajax-string.html" />
+    <Content Include="demos\basic-bar.html" />
+    <Content Include="demos\basic-clear.html" />
+    <Content Include="demos\basic-combined.html" />
+    <Content Include="demos\basic-csv.html" />
+    <Content Include="demos\basic-csv2.html" />
+    <Content Include="demos\basic-dollar-bar.html" />
+    <Content Include="demos\basic-dollar-line.html" />
+    <Content Include="demos\basic-dollar-pie.html" />
+    <Content Include="demos\basic-dual-charts.html" />
+    <Content Include="demos\basic-events-bar.html" />
+    <Content Include="demos\basic-events-line.html" />
+    <Content Include="demos\basic-events-pie.html" />
+    <Content Include="demos\basic-gauge.html" />
+    <Content Include="demos\basic-gradients.html" />
+    <Content Include="demos\basic-line.html" />
+    <Content Include="demos\basic-pie.html" />
+    <Content Include="demos\basic-tooltips.html" />
+    <Content Include="demos\basic-web-workers.html" />
+    <Content Include="demos\bipolar-basic.html" />
+    <Content Include="demos\bipolar-combined-gauge.html" />
+    <Content Include="demos\bipolar-csv-data.html" />
+    <Content Include="demos\bipolar-csv-reader.html" />
+    <Content Include="demos\bipolar-world-population.html" />
+    <Content Include="demos\cornergauge-csv-reader.html" />
+    <Content Include="demos\demos.css" />
+    <Content Include="demos\donut-basic.html" />
+    <Content Include="demos\donut-roundrobin.html" />
+    <Content Include="demos\drawing-api-circle-basic.html" />
+    <Content Include="demos\drawing-api-image-basic.html" />
+    <Content Include="demos\drawing-api-marker1-basic.html" />
+    <Content Include="demos\drawing-api-marker2-basic.html" />
+    <Content Include="demos\drawing-api-rect-basic.html" />
+    <Content Include="demos\drawing-api-rect-heatmap.html" />
+    <Content Include="demos\drawing-api-text-link.html" />
+    <Content Include="demos\drawing-api-text.html" />
+    <Content Include="demos\drawing-api-xaxis-basic.html" />
+    <Content Include="demos\drawing-api-xaxis-scale.html" />
+    <Content Include="demos\drawing-api-yaxis-basic.html" />
+    <Content Include="demos\drawing-api-yaxis-specific-labels.html" />
+    <Content Include="demos\fuel-ajax.html" />
+    <Content Include="demos\fuel-basic.html" />
+    <Content Include="demos\fuel-csv-reader.html" />
+    <Content Include="demos\fuel-effect-interactive.html" />
+    <Content Include="demos\fuel-grow.html" />
+    <Content Include="demos\fuel-interactive.html" />
+    <Content Include="demos\funnel-basic.html" />
+    <Content Include="demos\funnel-csv-reader.html" />
+    <Content Include="demos\funnel-interactive-key.html" />
+    <Content Include="demos\gantt-background-grid-dotted.html" />
+    <Content Include="demos\gantt-basic.html" />
+    <Content Include="demos\gantt-multiple-events.html" />
+    <Content Include="demos\gauge-adjustable.html" />
+    <Content Include="demos\gauge-ajax.html" />
+    <Content Include="demos\gauge-bank.html" />
+    <Content Include="demos\gauge-basic.html" />
+    <Content Include="demos\gauge-csv-reader.html" />
+    <Content Include="demos\gauge-customised.html" />
+    <Content Include="demos\gauge-graduated-blue.html" />
+    <Content Include="demos\hbar-ajax.html" />
+    <Content Include="demos\hbar-background-grid-dotted.html" />
+    <Content Include="demos\hbar-basic.html" />
+    <Content Include="demos\hbar-chrome-speeds.html" />
+    <Content Include="demos\hbar-csv-reader.html" />
+    <Content Include="demos\hbar-drawing-api-xaxis.html" />
+    <Content Include="demos\hbar-effect-grow.html" />
+    <Content Include="demos\hbar-grouped.html" />
+    <Content Include="demos\hbar-interactive-key.html" />
+    <Content Include="demos\hprogress-basic.html" />
+    <Content Include="demos\hprogress-bullet.html" />
+    <Content Include="demos\hprogress-csv-reader.html" />
+    <Content Include="demos\hprogress-custom-title.html" />
+    <Content Include="demos\hprogress-grow.html" />
+    <Content Include="demos\hprogress-interactive-key.html" />
+    <Content Include="demos\line-adjustable-range.html" />
+    <Content Include="demos\line-axis-options.html" />
+    <Content Include="demos\line-background-grid-dotted.html" />
+    <Content Include="demos\line-background-hbars.html" />
+    <Content Include="demos\line-basic.html" />
+    <Content Include="demos\line-basic2.html" />
+    <Content Include="demos\line-black-and-purple.html" />
+    <Content Include="demos\line-black.html" />
+    <Content Include="demos\line-blue-boxed.html" />
+    <Content Include="demos\line-click-event.html" />
+    <Content Include="demos\line-crosshairs-snap.html" />
+    <Content Include="demos\line-csv-reader.html" />
+    <Content Include="demos\line-different-colors.html" />
+    <Content Include="demos\line-dual-color-range.html" />
+    <Content Include="demos\line-dual-color-threshold.html" />
+    <Content Include="demos\line-dual-color.html" />
+    <Content Include="demos\line-dual-range.html" />
+    <Content Include="demos\line-dynamic-updates-range.html" />
+    <Content Include="demos\line-dynamic-updates.html" />
+    <Content Include="demos\line-effects-scrolling.html" />
+    <Content Include="demos\line-effects-trace.html" />
+    <Content Include="demos\line-fan.html" />
+    <Content Include="demos\line-front-page.html" />
+    <Content Include="demos\line-html-key.html" />
+    <Content Include="demos\line-interactive-key.html" />
+    <Content Include="demos\line-linestyle.html" />
+    <Content Include="demos\line-logarithmic-scale.html" />
+    <Content Include="demos\line-multiple-y-axes.html" />
+    <Content Include="demos\line-null-values.html" />
+    <Content Include="demos\line-out-of-bounds.html" />
+    <Content Include="demos\line-quarter-axis-dual-color.html" />
+    <Content Include="demos\line-quarter-axis.html" />
+    <Content Include="demos\line-quarter-axis2.html" />
+    <Content Include="demos\line-range-clickable.html" />
+    <Content Include="demos\line-range-clickable2.html" />
+    <Content Include="demos\line-range.html" />
+    <Content Include="demos\line-spline-filled.html" />
+    <Content Include="demos\line-spline-multiple-lines-array.html" />
+    <Content Include="demos\line-spline-multiple-lines.html" />
+    <Content Include="demos\line-static-yaxis.html" />
+    <Content Include="demos\line-stepped-trace.html" />
+    <Content Include="demos\line-surpressed-alerts.html" />
+    <Content Include="demos\line-us-prison-population.html" />
+    <Content Include="demos\line-varied-linewidths.html" />
+    <Content Include="demos\line-xonly.html" />
+    <Content Include="demos\line-zerostart.html" />
+    <Content Include="demos\meter-adjustable.html" />
+    <Content Include="demos\meter-basic.html" />
+    <Content Include="demos\meter-basic2.html" />
+    <Content Include="demos\meter-circular.html" />
+    <Content Include="demos\meter-circular2.html" />
+    <Content Include="demos\meter-csv-reader.html" />
+    <Content Include="demos\modaldialog.html" />
+    <Content Include="demos\odo-basic.html" />
+    <Content Include="demos\odo-csv-reader.html" />
+    <Content Include="demos\pie-ajax-json.html" />
+    <Content Include="demos\pie-basic.html" />
+    <Content Include="demos\pie-border.html" />
+    <Content Include="demos\pie-csv-reader.html" />
+    <Content Include="demos\pie-customised-and-animated.html" />
+    <Content Include="demos\pie-customised.html" />
+    <Content Include="demos\pie-east-axis-origin.html" />
+    <Content Include="demos\pie-effects-3d.html" />
+    <Content Include="demos\pie-effects-explode-onclick.html" />
+    <Content Include="demos\pie-effects-explode-onmousemove.html" />
+    <Content Include="demos\pie-effects-roundrobin-then-explode.html" />
+    <Content Include="demos\pie-effects-roundrobin-then-explode2.html" />
+    <Content Include="demos\pie-effects-roundrobin.html" />
+    <Content Include="demos\pie-explode-when-clicked.html" />
+    <Content Include="demos\pie-front-page.html" />
+    <Content Include="demos\pie-gradients.html" />
+    <Content Include="demos\pie-gradients2.html" />
+    <Content Include="demos\pie-interactive-key.html" />
+    <Content Include="demos\pie-key-gutter.html" />
+    <Content Include="demos\pie-rectangular.html" />
+    <Content Include="demos\pie-tooltips.html" />
+    <Content Include="demos\radar-basic.html" />
+    <Content Include="demos\radar-csv-reader.html" />
+    <Content Include="demos\radar-effects-grow.html" />
+    <Content Include="demos\radar-interactive-key.html" />
+    <Content Include="demos\radar-multiple-datasets-one-argument.html" />
+    <Content Include="demos\radar-multiple-datasets-seperate-arguments.html" />
+    <Content Include="demos\radar-non-filled-array.html" />
+    <Content Include="demos\radar-non-filled.html" />
+    <Content Include="demos\rose-basic.html" />
+    <Content Include="demos\rose-csv-reader.html" />
+    <Content Include="demos\rose-explode-implode-transition.html" />
+    <Content Include="demos\rose-interactive-key.html" />
+    <Content Include="demos\rose-non-equi-angular.html" />
+    <Content Include="demos\rose-offset-start.html" />
+    <Content Include="demos\rose-stacked-tooltips.html" />
+    <Content Include="demos\rose-stacked.html" />
+    <Content Include="demos\rscatter-basic.html" />
+    <Content Include="demos\rscatter-csv-reader.html" />
+    <Content Include="demos\rscatter-interactive-key.html" />
+    <Content Include="demos\rscatter-multiple-datasets-multiple-arguments.html" />
+    <Content Include="demos\rscatter-multiple-datasets-single-array.html" />
+    <Content Include="demos\scatter-add-markers.html" />
+    <Content Include="demos\scatter-axis-options.html" />
+    <Content Include="demos\scatter-background-grid-dotted.html" />
+    <Content Include="demos\scatter-background-hbars.html" />
+    <Content Include="demos\scatter-basic.html" />
+    <Content Include="demos\scatter-bubble-chart.html" />
+    <Content Include="demos\scatter-crosshairs-snap.html" />
+    <Content Include="demos\scatter-csv-reader.html" />
+    <Content Include="demos\scatter-date-time-values.html" />
+    <Content Include="demos\scatter-financial.html" />
+    <Content Include="demos\scatter-interactive-key.html" />
+    <Content Include="demos\scatter-multiple-datasets.html" />
+    <Content Include="demos\scatter-negative-x-axis.html" />
+    <Content Include="demos\scatter-scale.html" />
+    <Content Include="demos\thermometer-basic.html" />
+    <Content Include="demos\thermometer-csv-reader.html" />
+    <Content Include="demos\thermometer-dynamic.html" />
+    <Content Include="demos\thermometer-tooltips.html" />
+    <Content Include="demos\vprogress-basic.html" />
+    <Content Include="demos\vprogress-csv-reader.html" />
+    <Content Include="demos\vprogress-grow.html" />
+    <Content Include="demos\vprogress-interactive-key.html" />
+    <Content Include="demos\waterfall-background-grid-dotted.html" />
+    <Content Include="demos\waterfall-basic.html" />
+    <Content Include="demos\waterfall-csv-reader.html" />
+    <Content Include="demos\waterfall-grow-multiple-charts.html" />
+    <Content Include="demos\waterfall-grow.html" />
+    <Content Include="excanvas\EXCANVAS-LICENSE.txt" />
+    <Content Include="excanvas\excanvas.js" />
+    <Content Include="images\bg.png" />
+    <Content Include="images\bullet.png" />
+    <Content Include="images\creative-commons-logo-large.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\title.png" />
+    <Content Include="libraries\financial-data.js" />
+    <Content Include="libraries\jquery.min.js" />
+    <Content Include="libraries\RGraph.bar.js" />
+    <Content Include="libraries\RGraph.bipolar.js" />
+    <Content Include="libraries\RGraph.common.annotate.js" />
+    <Content Include="libraries\RGraph.common.context.js" />
+    <Content Include="libraries\RGraph.common.core.js" />
+    <Content Include="libraries\RGraph.common.csv.js" />
+    <Content Include="libraries\RGraph.common.dynamic.js" />
+    <Content Include="libraries\RGraph.common.effects.js" />
+    <Content Include="libraries\RGraph.common.key.js" />
+    <Content Include="libraries\RGraph.common.resizing.js" />
+    <Content Include="libraries\RGraph.common.tooltips.js" />
+    <Content Include="libraries\RGraph.common.zoom.js" />
+    <Content Include="libraries\RGraph.cornergauge.js" />
+    <Content Include="libraries\RGraph.drawing.circle.js" />
+    <Content Include="libraries\RGraph.drawing.image.js" />
+    <Content Include="libraries\RGraph.drawing.marker1.js" />
+    <Content Include="libraries\RGraph.drawing.marker2.js" />
+    <Content Include="libraries\RGraph.drawing.poly.js" />
+    <Content Include="libraries\RGraph.drawing.rect.js" />
+    <Content Include="libraries\RGraph.drawing.text.js" />
+    <Content Include="libraries\RGraph.drawing.xaxis.js" />
+    <Content Include="libraries\RGraph.drawing.yaxis.js" />
+    <Content Include="libraries\RGraph.fuel.js" />
+    <Content Include="libraries\RGraph.funnel.js" />
+    <Content Include="libraries\RGraph.gantt.js" />
+    <Content Include="libraries\RGraph.gauge.js" />
+    <Content Include="libraries\RGraph.hbar.js" />
+    <Content Include="libraries\RGraph.hprogress.js" />
+    <Content Include="libraries\RGraph.led.js" />
+    <Content Include="libraries\RGraph.line.js" />
+    <Content Include="libraries\RGraph.meter.js" />
+    <Content Include="libraries\RGraph.modaldialog.js" />
+    <Content Include="libraries\RGraph.odo.js" />
+    <Content Include="libraries\RGraph.pie.js" />
+    <Content Include="libraries\RGraph.radar.js" />
+    <Content Include="libraries\RGraph.rose.js" />
+    <Content Include="libraries\RGraph.rscatter.js" />
+    <Content Include="libraries\RGraph.scatter.js" />
+    <Content Include="libraries\RGraph.thermometer.js" />
+    <Content Include="libraries\RGraph.vprogress.js" />
+    <Content Include="libraries\RGraph.waterfall.js" />
+    <Content Include="license.txt" />
+    <Content Include="register.aspx" />
+    <Content Include="scripts\jsmin.txt" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="graph.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="excanvas\HTACCESS-SAMPLE" />
+    <Content Include="scripts\jsmin" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2224/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
